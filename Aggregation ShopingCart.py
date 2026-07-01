@@ -4,8 +4,8 @@ class Product:
         self.price = price
 
 class ShoppingCart:
-    def __init__(self, products):
-        self.products = products
+    def __init__(self, items):
+        self.products = items
 
     def total_price(self):
         return sum(p.price for p in self.products)
